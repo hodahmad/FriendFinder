@@ -4,11 +4,11 @@ This dynamic applications helps you find a friend that shares similar interests 
 
 # LINK:
 
-https: heroku
+(heroku link goes here)
 
 # HOW TO USE: 
 
-Visit our homepage at the link above and hit "Start Survey". After submitting the survery, a friend that matches your preferences will pop up. 
+Visit our homepage at the link above and hit "Start Survey". After submitting the survery, a friend that matches your preferences will pop up!
 
 # Technologies Used:
 - HTML

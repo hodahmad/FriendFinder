@@ -1,4 +1,3 @@
-
 var friends = [
 	{
 		name: "Emily",
