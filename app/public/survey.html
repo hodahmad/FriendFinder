@@ -2,16 +2,15 @@
 <html lang="en-us">
 <head>
 	<title>Friend Finder: Survey</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
 		<h1>Survey:</h1>
-		<p>Take a survery to match with a friend! Choose from 1-5; 1 = strongly disagree, 5 = strongly agree.</p>
+		<p>Take a survery to match with a friend! 1 = strongly disagree, 5 = strongly agree.</p>
 		<form>
 			<div class="form-group">
-				<input id="name" type="text" class="form-control" placeholder="Name">
+				<input id="name" type="text" class="form-control" placeholder="Your Name">
 			</div>
 			<div class="form-group">
 				<label for="question1">I love the outdoors.</label>
@@ -128,30 +127,20 @@
 			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
 		</div>
 		
-		<div id="bestFriendModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Your New Best Friend</h1>
+				<div class="content">
+					<div class="header">
+						<button type="button" class="close"></button>
+						<h3 class="title">Your Friend Match:</h1>
 					</div>
-					<div class="modal-body">
-						<h2 id="bestFriend"></h2>
-						<img id="bestFriendPhoto" src="#">
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div class="body">
+						<h2 id="newFriend"></h2>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
 
 	<script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
 
@@ -182,14 +171,12 @@
 				]
 			};
 			var currentURL = window.location.origin;
-			// Ajax call for receiving response after POST req
+
 			$.post(currentURL + "/api/friends", newUser, function(data) {
-				$("#bestFriend").text(data.name);
-				$("#bestFriendPhoto").attr("src", data.photo);
-				$("#bestFriendModal").modal("toggle");
+				$("#newFriend").text(data.name)
 			});
 		} else {
-			// If a required field is missing, show alert
+
 			alert("Survey is incomplete!");
 		}
 	});
