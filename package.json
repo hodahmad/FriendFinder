@@ -1,0 +1,21 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "This dynamic application helps you find a friend that shares similar interests and hobbies as you do! Fill out a quick 10-question survery to match with the perfect fit for you.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hodahmad/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hodahmad/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/hodahmad/FriendFinder#readme"
+}

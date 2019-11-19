@@ -10,7 +10,7 @@ var friends = [
 	{
 		name: "Max",
 		scores: [5, 1, 2, 3, 1, 2, 5, 1, 1, 1]
-	},
+	}, 
 	{
 		name: "Laurel",
 		scores: [4, 5, 5, 3, 1, 2, 1, 3, 5, 4]
