@@ -4,7 +4,7 @@ This dynamic application helps you find a friend that shares similar interests a
 
 # LINK:
 
-(heroku link goes here)
+https://nameless-lake-87771.herokuapp.com/
 
 # HOW TO USE: 
 
